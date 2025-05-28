@@ -1,19 +1,19 @@
-num1 = input('Enter first number: ')
-num2 = input('Enter second number: ')
-num3 = input('Enter third number: ')
+num1 = int(input('Enter first number: '))
+num2 = int(input('Enter second number: '))
+num3 = int(input('Enter third number: '))
 
-if(num1 > num2):
-    if(num1 > num3):
-        print("{0} is greater than {1}".format(num1, num3))
-        print("inside nested if")
-        print("inside nested once again")
+if num1 > num2:
+    if num1 >= num3:
+        print("\t{0} is greater than {1}".format(num1, num3))
+        print("\tinside nested if")
+        print("\tinside nested once again")
     else:
-        print("{0} is greater than {1}".format(num3, num1))
-        print("inside nested else")
-        print("inside nested else once again")
+        print("\t{0} is greater than {1}".format(num3, num1))
+        print("\tinside nested else")
+        print("\tinside nested else once again")
     print("outside nested")
     print("{0} is greater than {1}".format(num1, num2))
-    print("inside if")
+    print("inside main if")
 else:
     print("{0} is greater than {1}".format(num2, num1))
     print("inside else")
