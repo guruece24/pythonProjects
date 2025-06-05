@@ -64,3 +64,7 @@ print(f"{t} or {s} is {s or t}")
 print(f"{s} or {True} is {s or True}")
 
 print(f"{s} not is {not s}")
+
+"""
+multiline comments
+"""
